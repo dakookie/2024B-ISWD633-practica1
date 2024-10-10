@@ -4,7 +4,7 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
-# COMPLETAR 
+Las imágenes y los contenedores en Docker se diferencian en que las imágenes son plantillas de solo lectura que contienen todas las bibliotecas, dependencias y configuraciones necesarias para crear un contenedor, mientras que los contenedores son instancias en ejecución basadas en esas imágenes. Las imágenes actúan como un esquema o instantánea del entorno de ejecución, mientras que los contenedores son los entornos aislados donde la aplicación se ejecuta, pudiendo ser modificados durante su uso. En resumen, las imágenes son el punto de partida y los contenedores son las implementaciones activas de esas plantillas.
 
 ![Imagen y contenedores](img/imagenContenedores.JPG)
 ## Comandos para imágenes
@@ -24,19 +24,25 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
-# COMPLETAR
+```
+docker pull hello-world
+```
 
 **¿Qué es nginx**
-# COMPLETAR 
+Es un servidor web de código abierto que, desde su inicio en la gestión de servidores HTTP, ha evolucionado para ofrecer una amplia gama de funcionalidades. Actualmente, además de su función como servidor web, también se utiliza como proxy inverso, balanceador de carga HTTP, caché de contenido, y proxy de correo electrónico compatible con los protocolos IMAP, POP3 y SMTP. Gracias a su arquitectura eficiente, es popular para manejar grandes volúmenes de tráfico y optimizar el rendimiento de aplicaciones web.
 
 Descargar la imagen  **nginx** en la versión **alpine**
-# COMPLETAR
+```
+docker pull nginx:alpine
+```
 
 ### Listar imágenes
 
 ```
 docker images
 ```
+![docker](img/images.PNG)
+
 
 # COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
 
@@ -53,10 +59,12 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
-# COMPLETAR
+```
+docker inspect hello-world
+```
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
-# COMPLETAR
+
 
 ### Filtrar imágenes
 
