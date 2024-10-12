@@ -29,6 +29,7 @@ docker pull hello-world
 ```
 
 **¿Qué es nginx**
+
 Es un servidor web de código abierto que, desde su inicio en la gestión de servidores HTTP, ha evolucionado para ofrecer una amplia gama de funcionalidades. Actualmente, además de su función como servidor web, también se utiliza como proxy inverso, balanceador de carga HTTP, caché de contenido, y proxy de correo electrónico compatible con los protocolos IMAP, POP3 y SMTP. Gracias a su arquitectura eficiente, es popular para manejar grandes volúmenes de tráfico y optimizar el rendimiento de aplicaciones web.
 
 Descargar la imagen  **nginx** en la versión **alpine**
@@ -85,6 +86,7 @@ Eliminar la imagen hello-world
 ```
 docker rmi hello-world
 ```
+![docker](img/eliminarHelloWorld.png)
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
 Cuando eliminas una imagen Docker, Docker no elimina automáticamente los contenedores que se han creado a partir de esa imagen. Esto significa que, aunque hayas eliminado la imagen, el contenedor seguirá ejecutándose normalmente.  
